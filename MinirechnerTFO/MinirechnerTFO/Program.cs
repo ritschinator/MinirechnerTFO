@@ -20,6 +20,7 @@ namespace MinirechnerTFO
             Console.WriteLine(Addiere(Zahl_1, Zahl_2));
             Console.WriteLine(Subtrahiere(Zahl_1, Zahl_2));
             Console.WriteLine(Multipliziere(Zahl_1, Zahl_2));
+            Console.WriteLine(Dividiere(Zahl_1, Zahl_2));
 
             Console.ReadKey();
         }
@@ -57,6 +58,11 @@ namespace MinirechnerTFO
         static int Multipliziere(int Zahl1, int Zahl2)
         {
             return Zahl1 * Zahl2;
+        }
+
+        static int Dividiere(int Zahl1, int Zahl2)
+        {
+            return Zahl1 / Zahl2;
         }
     }
 }
