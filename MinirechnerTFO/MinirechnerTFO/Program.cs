@@ -10,6 +10,15 @@ namespace MinirechnerTFO
         static void Main(string[] args)
         {
             Titel("Titel");
+
+            Console.WriteLine("Zahl_1 ?");
+            int Zahl_1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Zahl_2 ?");
+            int Zahl_2 = Convert.ToInt32(Console.ReadLine());
+            
+            
+            Console.WriteLine(Addiere(Zahl_1, Zahl_2));
+
             Console.ReadKey();
         }
 
@@ -31,6 +40,11 @@ namespace MinirechnerTFO
             {
                 Console.Write("*");
             }
+        }
+
+        static int Addiere(int Zahl1, int Zahl2)
+        {
+            return Zahl1 + Zahl2;
         }
     }
 }
